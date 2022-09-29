@@ -198,7 +198,7 @@ chmod -R 777 /usr/share/nginx/html/v2board
 echo "* * * * * root /usr/bin/php /usr/share/nginx/html/v2board/artisan schedule:run >/dev/null 2>/dev/null &" >> /etc/crontab
 # 安装Node.js
 curl -sL https://rpm.nodesource.com/setup_10.x | bash -
-yum -y install nodejs
+apt-get -y install nodejs
 npm install -g n
 n 17
 node -v
